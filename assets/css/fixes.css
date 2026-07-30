@@ -1,0 +1,9 @@
+@media (max-width: 575.98px) {
+  .inner-hero-copy h1 {
+    max-width: 100%;
+    font-size: clamp(2.15rem, 10vw, 3rem);
+    line-height: 1;
+    overflow-wrap: anywhere;
+    text-wrap: wrap;
+  }
+}

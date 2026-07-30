@@ -1,0 +1,6 @@
+@media (max-width: 575.98px) {
+  .inner-hero-copy h1 {
+    width: min(330px, calc(100vw - 48px));
+    font-size: clamp(1.8rem, 7.5vw, 2.3rem);
+  }
+}
