@@ -14,7 +14,9 @@
   <meta property="og:description" content="Explore the Veanora Fashion Blog for the latest style inspiration, clothing guides, fashion trends, and practical tips to help you dress with confidence every day.">
   <meta property="og:url" content="https://www.veanora.com/blog/">
   <meta property="og:image" content="https://www.veanora.com/assets/img/band-saree.jpg">
-  <link rel="icon" href="../favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/favicon-180x180.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -28,44 +30,104 @@
 <body class="inner-page blog-index">
 <a class="skip-link" href="#main">Skip to main content</a>
 <header class="site-header">
-  <div class="promo-bar"><div class="container d-flex justify-content-between align-items-center py-2">
-    <p class="promo-text mb-0">Complimentary style guidance · Delivery across Bangladesh</p>
-    <a class="d-none d-sm-inline-flex align-items-center gap-2" href="tel:+8801715524744"><i class="bi bi-telephone"></i> +880 1715-524744</a>
-  </div></div>
-  <div class="header-main" id="headerMain">
-    <div class="container masthead">
-      <button class="icon-btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-label="Open menu"><i class="bi bi-list fs-4"></i></button>
-      <a class="brand-lockup" href="../index.html" aria-label="Veanora home"><img src="../assets/img/veanora-logo.png" alt="Veanora" width="172" height="48"></a>
-      <nav class="main-nav main-nav-refined d-none d-lg-block" aria-label="Primary">
-        <ul>
-          <li><a href="../shop/index.html">Shop</a></li>
-          <li><a href="../shop/category/womens-clothing-collection-in-bangladesh.html">Women</a></li>
-          <li><a href="../shop/category/mens-fashion-in-bangladesh.html">Men</a></li>
-          <li><a href="../shop/category/seasonal-fashion-in-bangladesh.html">Seasonal</a></li>
-          <li><a href="../blog/index.html">Journal</a></li>
-          <li><a href="../about-us/index.html">Our story</a></li>
-        </ul>
-      </nav>
-      <div class="masthead-tools">
-        <button class="icon-btn" type="button" aria-label="Search"><i class="bi bi-search"></i></button>
-        <a class="icon-btn" href="../about-us/contact-us.html" aria-label="Contact Veanora"><i class="bi bi-person"></i></a>
-        <button class="icon-btn" type="button" aria-label="Shopping bag"><i class="bi bi-bag"></i><span class="cart-count">0</span></button>
+
+  <!-- Promo bar -->
+  <!-- <div class="promo-bar">
+    <div class="container d-flex align-items-center justify-content-between py-2">
+      <p class="promo-text mb-0">Luxury fashion now available across <strong class="text-champagne-light">Bangladesh</strong></p>
+      <div class="d-none d-sm-flex align-items-center gap-3">
+        <a href="https://instagram.com/veanoraofficial" target="_blank" rel="noopener" aria-label="Veanora on Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://facebook.com/veanora.official" target="_blank" rel="noopener" aria-label="Veanora on Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://youtube.com/@veanoraofficial" target="_blank" rel="noopener" aria-label="Veanora on YouTube"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.linkedin.com/company/veanora.official/" target="_blank" rel="noopener" aria-label="Veanora on LinkedIn"><i class="bi bi-linkedin"></i></a>
       </div>
     </div>
-  </div>
-  <div class="offcanvas offcanvas-start offcanvas-veanora" tabindex="-1" id="mobileMenu">
-    <div class="offcanvas-header border-bottom border-line"><img src="../assets/img/veanora-logo.png" alt="Veanora" width="140"><button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close menu"></button></div>
-    <nav class="offcanvas-body p-0">
-      <a class="nav-link-mobile" href="../index.html">Home</a>
-      <a class="nav-link-mobile" href="../shop/index.html">Shop all</a>
-      <a class="nav-link-mobile" href="../shop/category/womens-clothing-collection-in-bangladesh.html">Women</a>
-      <a class="nav-link-mobile" href="../shop/category/mens-fashion-in-bangladesh.html">Men</a>
-      <a class="nav-link-mobile" href="../shop/category/girls-clothing-in-bangladesh.html">Girls</a>
-      <a class="nav-link-mobile" href="../shop/category/boys-fashion-in-bangladesh.html">Boys</a>
-      <a class="nav-link-mobile" href="../blog/index.html">Journal</a>
-      <a class="nav-link-mobile" href="../about-us/index.html">Our story</a>
-      <a class="nav-link-mobile" href="../about-us/contact-us.html">Contact</a>
+  </div> -->
+
+  <!-- Main bar -->
+  <div class="header-main" id="headerMain">
+    <div class="container d-flex align-items-center justify-content-between gap-3 py-3">
+
+      <div class="d-flex align-items-center gap-2">
+        <button class="icon-btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Open navigation menu">
+          <i class="bi bi-list fs-4"></i>
+        </button>
+        <a href="../index.html" aria-label="Veanora home" class="d-inline-flex">
+          <img src="../assets/img/veanora-logo.png" alt="Veanora luxury clothing brand logo" class="brand-logo" width="160" height="44">
+        </a>
+      </div>
+
+      <!-- Desktop search -->
+      <form class="d-none d-md-flex flex-grow-1 search-wrap" style="max-width:560px" role="search" action="#" onsubmit="return false;">
+        <label class="visually-hidden" for="site-search">Search Veanora</label>
+        <i class="bi bi-search"></i>
+        <input id="site-search" name="s" type="search" class="search-field" placeholder="Search sarees, abayas, denim, accessories…">
+      </form>
+
+      <!-- Icons -->
+      <div class="d-flex align-items-center gap-1">
+        <a href="tel:+8801715524744" class="icon-btn d-none d-sm-inline-flex align-items-center gap-2" aria-label="Call Veanora on +8801715524744">
+          <i class="bi bi-telephone"></i><span class="d-none d-lg-inline small">+880 1715-524744</span>
+        </a>
+        <button class="icon-btn" type="button" aria-label="Account"><i class="bi bi-person"></i></button>
+        <button class="icon-btn d-none d-sm-inline-flex" type="button" aria-label="Wishlist"><i class="bi bi-heart"></i></button>
+        <button class="icon-btn" type="button" aria-label="Shopping cart, 0 items">
+          <i class="bi bi-bag"></i><span class="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile search -->
+    <div class="container d-md-none pb-3">
+      <form class="search-wrap" role="search" action="#" onsubmit="return false;">
+        <label class="visually-hidden" for="site-search-mobile">Search Veanora</label>
+        <i class="bi bi-search"></i>
+        <input id="site-search-mobile" name="s" type="search" class="search-field" placeholder="Search…">
+      </form>
+    </div>
+
+    <!-- Primary nav -->
+    <nav class="main-nav d-none d-lg-block" aria-label="Primary">
+      <ul class="container">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../shop/index.html">Shop</a></li>
+        <li><a href="../shop/category/womens-clothing-collection-in-bangladesh.html">Women</a></li>
+        <li><a href="../shop/category/mens-fashion-in-bangladesh.html">Men</a></li>
+        <li><a href="../shop/category/girls-clothing-in-bangladesh.html">Girls</a></li>
+        <li><a href="../shop/category/boys-fashion-in-bangladesh.html">Boys</a></li>
+        <li><a href="../shop/category/womens-clothing-collection-in-bangladesh.html">Sarees</a></li>
+        <li><a href="../shop/category/womens-clothing-collection-in-bangladesh.html">Abayas</a></li>
+        <li><a href="../shop/category/fashion-accessories-in-bangladesh.html">Accessories</a></li>
+        <li><a href="../blog/index.html">Journal</a></li>
+      </ul>
     </nav>
+  </div>
+
+  <!-- Mobile offcanvas -->
+  <div class="offcanvas offcanvas-start offcanvas-veanora" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header border-bottom border-line">
+      <img src="../assets/img/veanora-logo.png" alt="Veanora" class="brand-logo" width="140" height="38">
+      <h2 class="visually-hidden" id="mobileMenuLabel">Mobile navigation</h2>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close menu"></button>
+    </div>
+    <div class="offcanvas-body p-0 d-flex flex-column">
+      <nav aria-label="Mobile" class="flex-grow-1">
+        <a class="nav-link-mobile" href="../index.html" data-bs-dismiss="offcanvas">Home</a>
+        <a class="nav-link-mobile" href="../shop/index.html">Shop all</a>
+        <a class="nav-link-mobile" href="../shop/category/womens-clothing-collection-in-bangladesh.html">Women</a>
+        <a class="nav-link-mobile" href="../shop/category/mens-fashion-in-bangladesh.html">Men</a>
+        <a class="nav-link-mobile" href="../shop/category/girls-clothing-in-bangladesh.html">Girls</a>
+        <a class="nav-link-mobile" href="../shop/category/boys-fashion-in-bangladesh.html">Boys</a>
+        <a class="nav-link-mobile" href="../shop/category/womens-clothing-collection-in-bangladesh.html">Sarees</a>
+        <a class="nav-link-mobile" href="../shop/category/womens-clothing-collection-in-bangladesh.html">Abayas</a>
+        <a class="nav-link-mobile" href="../shop/category/fashion-accessories-in-bangladesh.html">Accessories</a>
+        <a class="nav-link-mobile" href="../blog/index.html">Journal</a>
+      </nav>
+      <div class="p-4 border-top border-line d-flex gap-4 small">
+        <a href="https://wa.me/+8801715524744" target="_blank" rel="noopener" class="d-flex align-items-center gap-2"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+        <a href="https://m.me/veanora.official" target="_blank" rel="noopener" class="d-flex align-items-center gap-2"><i class="bi bi-messenger"></i> Messenger</a>
+      </div>
+    </div>
   </div>
 </header>
 <main id="main">

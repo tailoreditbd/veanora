@@ -1,0 +1,13 @@
+@media (max-width: 575.98px) {
+  .hero-copy {
+    width: calc(100vw - 48px);
+    max-width: calc(100vw - 48px);
+  }
+
+  .hero-copy .hero-title {
+    font-size: clamp(1.8rem, 8vw, 2.15rem);
+    line-height: 1.02;
+    overflow-wrap: anywhere;
+    text-wrap: wrap;
+  }
+}
