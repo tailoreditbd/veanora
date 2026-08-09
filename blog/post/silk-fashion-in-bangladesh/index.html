@@ -26,12 +26,48 @@
   <link rel="stylesheet" href="../../../assets/css/pages.css">
   <link rel="stylesheet" href="../../../assets/css/fixes.css">
   <link rel="stylesheet" href="../../../assets/css/mobile-heading.css">
+  <style>
+    .silk-article-page .breadcrumbs { font-size: 13px; }
+    .silk-article-page .editorial-content h2 {
+      font-size: clamp(1.75rem, 3.2vw, 2.7rem);
+    }
+    .silk-article-page .article-prose h3 {
+      font-size: clamp(1.25rem, 2vw, 1.5rem);
+    }
+    @media (min-width: 992px) {
+      .silk-article-page .inner-hero-copy h1 {
+        font-size: clamp(calc(2.8rem - 5px), calc(6vw - 5px), calc(5.6rem - 5px));
+      }
+      .silk-article-page .editorial-content h2 {
+        font-size: clamp(calc(1.75rem - 4px), calc(3.2vw - 4px), calc(2.7rem - 4px));
+      }
+      .silk-article-page .article-prose h3 {
+        font-size: clamp(calc(1.25rem - 3px), calc(2vw - 3px), calc(1.5rem - 3px));
+      }
+    }
+  </style>
 </head>
-<body class="inner-page article">
+<body class="inner-page article silk-article-page">
 <a class="skip-link" href="#main">Skip to main content</a>
 <header class="site-header">
+
+  <!-- Promo bar -->
+  <!-- <div class="promo-bar">
+    <div class="container d-flex align-items-center justify-content-between py-2">
+      <p class="promo-text mb-0">Luxury fashion now available across <strong class="text-champagne-light">Bangladesh</strong></p>
+      <div class="d-none d-sm-flex align-items-center gap-3">
+        <a href="https://instagram.com/veanoraofficial" target="_blank" rel="noopener" aria-label="Veanora on Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://facebook.com/veanora.official" target="_blank" rel="noopener" aria-label="Veanora on Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://youtube.com/@veanoraofficial" target="_blank" rel="noopener" aria-label="Veanora on YouTube"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.linkedin.com/company/veanora.official/" target="_blank" rel="noopener" aria-label="Veanora on LinkedIn"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Main bar -->
   <div class="header-main" id="headerMain">
     <div class="container d-flex align-items-center justify-content-between gap-3 py-3">
+
       <div class="d-flex align-items-center gap-2">
         <button class="icon-btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Open navigation menu">
           <i class="bi bi-list fs-4"></i>
@@ -40,11 +76,15 @@
           <img src="../../../assets/img/veanora-logo.png" alt="Veanora luxury clothing brand logo" class="brand-logo" width="160" height="44">
         </a>
       </div>
+
+      <!-- Desktop search -->
       <form class="d-none d-md-flex flex-grow-1 search-wrap" style="max-width:560px" role="search" action="#" onsubmit="return false;">
         <label class="visually-hidden" for="site-search">Search Veanora</label>
         <i class="bi bi-search"></i>
         <input id="site-search" name="s" type="search" class="search-field" placeholder="Search sarees, abayas, denim, accessories…">
       </form>
+
+      <!-- Icons -->
       <div class="d-flex align-items-center gap-1">
         <a href="tel:+8801715524744" class="icon-btn d-none d-sm-inline-flex align-items-center gap-2" aria-label="Call Veanora on +8801715524744">
           <i class="bi bi-telephone"></i><span class="d-none d-lg-inline small">+880 1715-524744</span>
@@ -56,6 +96,8 @@
         </button>
       </div>
     </div>
+
+    <!-- Mobile search -->
     <div class="container d-md-none pb-3">
       <form class="search-wrap" role="search" action="#" onsubmit="return false;">
         <label class="visually-hidden" for="site-search-mobile">Search Veanora</label>
@@ -63,6 +105,8 @@
         <input id="site-search-mobile" name="s" type="search" class="search-field" placeholder="Search…">
       </form>
     </div>
+
+    <!-- Primary nav -->
     <nav class="main-nav d-none d-lg-block" aria-label="Primary">
       <ul class="container">
         <li><a href="../../../index.html">Home</a></li>
@@ -78,6 +122,8 @@
       </ul>
     </nav>
   </div>
+
+  <!-- Mobile offcanvas -->
   <div class="offcanvas offcanvas-start offcanvas-veanora" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
     <div class="offcanvas-header border-bottom border-line">
       <img src="../../../assets/img/veanora-logo.png" alt="Veanora" class="brand-logo" width="140" height="38">
